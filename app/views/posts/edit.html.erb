@@ -14,7 +14,7 @@
 
     <tr>
       <th><%= f.label :enddate ,"終了日" %></th>
-      <td><%= f.date_field :enddate %></td>
+      <td><%= f.date_field :enddate,min: Date.current %></td>
     </tr>
 
     <tr>

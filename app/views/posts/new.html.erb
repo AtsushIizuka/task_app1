@@ -10,13 +10,13 @@
 
     <tr>
       <th><%= f.label :startdate ,"開始日" %></th>
-      <td><%= f.date_field :startdate, value: Time.now.strftime("%Y-%m-%d") %></td>
+      <td><%= f.date_field :startdate, value: Time.now.strftime("%Y-%m-%d"),min: Date.current %></td>
     
     </tr>
 
     <tr>
       <th><%= f.label :enddate ,"終了日" %></th>
-      <td><%= f.date_field :enddate, value: Time.now.strftime("%Y-%m-%d") %></td>
+      <td><%= f.date_field :enddate, value: Time.now.strftime("%Y-%m-%d"), min: Date.current%></td>
     </tr>
 
     <tr>
